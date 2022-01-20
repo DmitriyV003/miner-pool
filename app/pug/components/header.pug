@@ -1,0 +1,25 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.pt-0.pb-0
+    .container.d-flex.align-items-center
+        a.navbar-brand(href='#')
+            img(src='./images/logo-dark.svg' width=132 height=20)
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse.align-items-center
+            ul.navbar-nav.me-auto
+                li.nav-item
+                    a.nav-link.pt-0.active(aria-current='page' href='#') Calculators
+                li.nav-item
+                    a.nav-link.pt-0(href='#') Select coin
+                li.nav-item
+                    a.nav-link.pt-0(href='#') Support
+                li.nav-item
+                    a.nav-link.pt-0(href='#') FAQ
+            .d-flex.align-items-center
+                .d-flex.nav-socials
+                    a.nav-social
+                        img(src='./images/socials/google.svg')
+                    a.nav-social
+                        img(src='./images/socials/telegramm.svg')
+                .form-check.form-switch.mb-0
+                    label.form-check-label.text-white.fs-6(for='flexSwitchCheckDefault') Night mode
+                    input#flexSwitchCheckDefault.form-check-input(type='checkbox' role='switch')

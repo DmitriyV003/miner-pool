@@ -1,0 +1,98 @@
+body
+	font-family: Montserrat, sans-serif
+	font-style: normal
+	position: relative
+	color: rgba(20, 16, 41, 0.6)
+	font-size: 14px
+	font-weight: 400
+	line-height: 20px
+	background: $dark
+
+button, input, textarea, span, div
+	font-family: Montserrat, sans-serif
+	outline: none !important
+
+	&:hover
+		outline: none !important
+
+	&:focus
+		outline: none !important
+
+	&:active
+		outline: none !important
+
+.btn
+	display: inline-block
+	outline: none !important
+	cursor: pointer
+	border: 0 solid transparent
+	font-size: 12px
+	line-height: 20px
+	.icon
+		margin-right: 16px
+	&-primary
+		padding: 24px 27px
+		color: white
+		font-weight: 600
+		font-size: 16px
+		line-height: 20px
+		background: linear-gradient(131.64deg, #35B6FF 24.79%, #1B84D7 73.53%)
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 12px 20px rgba(27, 132, 215, 0.32)
+		border-radius: 20px
+	&-secondary
+		text-transform: uppercase
+		color: $white
+		background: rgba(181, 112, 249, 0.28)
+		+transition
+		text-align: center
+		&:hover
+			color: $white
+			box-shadow: 0 8px 8px -4px rgba(245, 92, 69, 0.12), 0 8px 16px 0 rgba(245, 92, 69, 0.24), 0 1px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(245, 92, 69, 0.24)
+			background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), linear-gradient(114deg, #fcc203 -11%, #f5a10e 42%, #e63622 115%)
+
+		&:active &.disabled, &[disabled="disabled"]
+			cursor: text
+			color: rgba(255, 255, 255, 0.24)
+			box-shadow: 0 12px 8px -4px rgba(245, 92, 69, 0.12), 0 24px 24px 0 rgba(245, 92, 69, 0.24), 0 4px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(245, 92, 69, 0.24)
+			background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), linear-gradient(114deg, #fcc203 -11%, #f5a10e 42%, #e63622 115%)
+
+	&-wht
+		color: #f5a10e
+		+font(16px, 1.5em, 600)
+		border-radius: 10px
+		+transition
+		box-shadow: 0 8px 8px -4px rgba(245, 161, 14, 0.06), 0 2px 4px -1px rgba(27, 10, 82, 0.06), 0 0 1px 0 rgba(245, 161, 14, 0.12)
+		background-color: #ffffff
+		text-align: center
+
+		&:hover
+			color: #f5a10e
+			box-shadow: 0 12px 12px -4px rgba(245, 161, 14, 0.06), 0 4px 4px -1px rgba(27, 10, 82, 0.06), 0 1px 1px 0 rgba(245, 161, 14, 0.12)
+			background-color: #ffffff
+
+		&:active
+			color: #f5a10e
+			box-shadow: 0 8px 8px -4px rgba(245, 161, 14, 0.06), 0 1px 4px -1px rgba(27, 10, 82, 0.06), 0 1px 1px 0 rgba(245, 161, 14, 0.12)
+
+		&.disabled, &[disabled="disabled"]
+			cursor: text
+			color: rgba(245, 161, 14, 0.24)
+			box-shadow: 0 0 8px -4px rgba(245, 161, 14, 0.06), 0 0 4px -1px rgba(27, 10, 82, 0.06), 0 0 1px 0 rgba(245, 161, 14, 0.12)
+
+	&-gray, &-white
+		color: rgba(20, 1, 41, 0.6)
+		border-radius: 8px
+		background-color: rgba(20, 1, 41, 0.02)
+		+transition
+		padding: 6px 16px
+		text-align: center
+		+font(14px, 1.71em, 500)
+
+		&:hover, &.active
+			background-color: #ec601a
+			color: $white
+			box-shadow: 0 8px 8px -4px rgba(236, 96, 26, 0.06), 0 2px 4px -1px rgba(27, 10, 82, 0.06), 0 0 1px 0 rgba(236, 96, 26, 0.12)
+
+		&.disabled, &[disabled="disabled"]
+			color: rgba(20, 16, 41, 0.24)
+			cursor: text

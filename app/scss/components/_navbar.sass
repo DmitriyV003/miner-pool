@@ -1,0 +1,30 @@
+.navbar
+	background: $light-dark
+	.nav-socials
+		margin-right: 50px
+	.nav-social
+		&:not(:last-child)
+			margin-right: 20px
+	&-brand
+		margin-right: 33px
+	.nav-item
+		&:not(:last-child)
+			margin-right: 33px
+	.navbar-nav
+		padding-top: 30px
+		.nav-link
+			padding-bottom: 26px
+			position: relative
+			font-size: 14px
+			line-height: 20px
+			font-weight: 400
+			&.active
+				&::after
+					width: 100%
+					position: absolute
+					bottom: 0
+					left: 0
+					height: 4px
+					content: ''
+					background: linear-gradient(131.64deg, #35B6FF 24.79%, #1B84D7 73.53%)
+					border-radius: 10px 10px 0 0

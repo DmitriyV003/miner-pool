@@ -1,0 +1,93 @@
+=bg($url)
+	background-image: url($url)
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	background-position-x: center
+	background-position-y: center
+	background-repeat: no-repeat
+
+=xl
+	@media (max-width: 1200px)
+		@content
+
+=xl-only
+	@media (min-width: 992px) and (max-width: 1199px)
+		@content
+
+=lg
+	@media (max-width: 992px)
+		@content
+
+=lg-min
+	@media (min-width: 992px)
+		@content
+
+=md
+	@media (max-width: 768px)
+		@content
+
+=md-min
+	@media (min-width: 768px)
+		@content
+
+=sm
+	@media (max-width: 576px)
+		@content
+
+=media($name, $value, $size)
+	@media (max-width: $size + 'px')
+		#{$name}: $value
+
+=xl-one($name, $value)
+	@media (max-width: 1200px)
+		#{$name}: $value
+
+=lg-one($name, $value)
+	@media (max-width: 992px)
+		#{$name}: $value
+
+=md-one($name, $value)
+	@media (max-width: 768px)
+		#{$name}: $value
+
+=sm-one($name, $value)
+	@media (max-width: 576px)
+		#{$name}: $value
+
+=media-b($size)
+	@media (max-width: $size + 'px')
+		@content
+
+=media-i($min-size, $max-size)
+	@media (min-width: $min-size + 'px') and (max-width: $max-size + 'px')
+		@content
+
+=media-b-height($size)
+	@media (max-height: $size + 'px')
+		@content
+
+=pseudo($cont: '', $disp: block, $pos: absolute)
+	content: $cont
+	display: $disp
+	position: $pos
+
+=font($font-size, $line-height, $font-weight, $letter-spacing: normal)
+	font-size: $font-size
+	line-height: $line-height
+	font-weight: $font-weight
+	letter-spacing: $letter-spacing
+
+=transition($el: all, $time: .3s, $type: ease-out)
+	-webkit-transition: $el $time $type
+	-moz-transition: $el $time $type
+	-o-transition: $el $time $type
+	transition: $el $time $type
+
+=rotate($rotate: 90deg)
+	-moz-transform: rotate($rotate)
+	-ms-transform: rotate($rotate)
+	-webkit-transform: rotate($rotate)
+	-o-transform: rotate($rotate)
+	transform: rotate($rotate)

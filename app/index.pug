@@ -1,0 +1,81 @@
+extends pug/layout/layout-index
+
+block vars
+  -const pageTitle = 'Главная страница'
+  -const pageClass = 'index'
+
+block content
+  section.banner-tabs
+    .container.position-relative
+      .tab-buttons
+        .tab-prev
+          img(src='./images/icons/arrow.svg')
+        .tab-next
+          img(src='./images/icons/arrow.svg')
+      #pills-tabContent.tab-content
+        #pills-home.tab-pane.fade.show
+          .row
+            .col-xl-6
+              div.content
+                span.btn.btn-secondary last news
+                h1.text-white.fw-bolder.text-uppercase Your pool with great support and features
+                p.text-white Stratums in EU/US/ASIA. Custom payouts, fast statistics, enhanced charts, great live support, loyalty rewards plugin
+                a.btn.btn-primary
+                  i.fab.fa-telegram-plane.icon
+                  span Join to Telegram bot
+            .col-xl-6
+              img(src='./images/tab-content-1.svg')
+        #pills-profile.tab-pane.fade
+          .row
+            .col-xl-6
+              div.content
+                span.btn.btn-secondary last news
+                h1.text-white.fw-bolder.text-uppercase FLUX parallel assets
+                p.text-white Stratums in EU/US/ASIA. Custom payouts, fast statistics, enhanced charts, great live support, loyalty rewards plugin
+            .col-xl-6
+              img(src='./images/tab-content-1.svg')
+        #pills-contact.tab-pane.fade
+          .row
+            .col-xl-6
+              div.content
+                span.btn.btn-secondary last news
+                h1.text-white.fw-bolder.text-uppercase New Firo pool
+                p.text-white Stratums in EU/US/ASIA. Custom payouts, fast statistics, enhanced charts, great live support, loyalty rewards plugin
+            .col-xl-6
+              img(src='./images/tab-content-1.svg')
+        #pills-contact2.tab-pane.fade
+          .row
+            .col-xl-6
+              div.content
+                span.btn.btn-secondary last news
+                h1.text-white.fw-bolder.text-uppercase Minerstat Partnership
+                p.text-white Stratums in EU/US/ASIA. Custom payouts, fast statistics, enhanced charts, great live support, loyalty rewards plugin
+            .col-xl-6
+              img(src='./images/tab-content-1.svg')
+      .js-nav-tabs
+        div
+          .nav-item(role='presentation')
+            button#pills-home-tab.w-100.justify-content-start.nav-link.d-flex.align-items-center.border-0.active(type='button')
+              img(src='./images/tab-1.svg')
+              span.text-start Your pool with great support
+        div
+          .nav-item(role='presentation')
+            button#pills-profile-tab.w-100.justify-content-start.nav-link.d-flex.align-items-center.border-0(type='button')
+              img(src='./images/tab-2.svg')
+              span.text-start FLUX parallel assets
+        div
+          .nav-item(role='presentation')
+            button#pills-contact-tab.w-100.justify-content-start.nav-link.d-flex.align-items-center.border-0(type='button')
+              img(src='./images/tab-3.svg')
+              span.text-start New Firo pool
+        div
+          .nav-item(role='presentation')
+            button#pills-last-tab.w-100.justify-content-start.nav-link.d-flex.align-items-center.border-0(type='button')
+              img(src='./images/tab-4.svg')
+              span.text-start Minerstat Partnership
+
+  section.coins
+    .container
+block script
+  script(src="js/index.js")
+

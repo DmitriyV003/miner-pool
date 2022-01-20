@@ -1,0 +1,31 @@
+doctype html
+html(lang="ru")
+  block vars
+    -const pageTitle = ''
+    -const pageClass = 'frontpage'
+
+  head
+    //- base(href="http://z7.2x2m.ru/")
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap' rel='stylesheet')
+    link(href="libs/css/vendor.min.css", rel="stylesheet")
+    link(href="css/style.css", rel="stylesheet")
+    title= pageTitle
+    meta(name="cmsmagazine", content="047aba4b7470a7fde82d8db44a6d7c62")
+    //script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js", integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p", crossorigin="anonymous")
+    //script(src="libs/js/vendor.min.js")
+  body(class= `page-${pageClass}`)
+    include ../components/header.pug
+
+    //- Content
+    main.main(class= `main-${pageClass}`)
+      block content
+
+    include ../components/footer
+
+    script(src="./libs/js/vendor.min.js")
+  block script
