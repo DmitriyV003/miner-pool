@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('.tab-content').slick({
+	$('.js-tab-content').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
@@ -20,4 +20,10 @@ $(document).ready(function () {
 		infinite: true,
 		arrows: false
 	})
+
+	const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+	const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl)
+	})
+
 });

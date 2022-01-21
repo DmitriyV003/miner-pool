@@ -15,7 +15,6 @@
     "browser-sync": "^2.26.10",
     "css-star-rating": "^1.2.4",
     "del": "^5.1.0",
-    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
     "gulp-changed": "^4.0.2",
@@ -40,6 +39,8 @@
     "sass": "^1.49.0",
     "useref": "^1.4.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
   "description": ""
 }

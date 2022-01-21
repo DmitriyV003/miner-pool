@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
-  $('.tab-content').slick({
+  $('.js-tab-content').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -21,5 +21,9 @@ $(document).ready(function () {
     focusOnSelect: true,
     infinite: true,
     arrows: false
+  });
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
   });
 });

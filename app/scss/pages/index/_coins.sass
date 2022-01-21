@@ -1,3 +1,112 @@
 .coins
 	padding-top: 40px
 	padding-bottom: 80px
+	.coin
+		background: rgba(37, 36, 51, 0.8)
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09)
+		backdrop-filter: blur(16px)
+		border-radius: 28px
+		padding: 40px
+		margin-bottom: 24px
+		cursor: pointer
+		transition: all 0.3s
+		+lg
+			padding: 24px 16px
+			margin-bottom: 12px
+		&:hover
+			transform: translateY(-16px)
+			+lg
+				transform: translateY(-4px)
+			.coin__btn
+				background: linear-gradient(131.64deg, #35B6FF 24.79%, #1B84D7 73.53%)
+				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 12px 20px rgba(27, 132, 215, 0.32)
+		p
+			padding: 8px 16px
+			background: rgba(181, 112, 249, 0.2)
+			color: white
+			border-radius: 8px
+			font-weight: 500
+			font-size: 12px
+			line-height: 16px
+			margin: 0
+			.emp
+				font-weight: 600
+		h3
+			margin-bottom: 8px
+			font-weight: 600
+			font-size: 20px
+			line-height: 20px
+			color: white
+		&__header
+			display: flex
+			align-items: center
+			margin-bottom: 40px
+			+lg
+				margin-bottom: 16px
+		&__img
+			width: 60px
+			height: 60px
+			margin-right: 24px
+		&__content
+			margin-bottom: 40px
+			+lg
+				margin-bottom: 24px
+		&__btn
+			padding: 20px
+			width: 100%
+			background: rgba(255, 255, 255, 0.04)
+			box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.13)
+			border-radius: 20px
+			font-weight: 600
+			color: white
+			font-size: 16px
+			line-height: 20px
+			transition: all 0.01s
+		&__line
+			display: flex
+			align-items: center
+			justify-content: space-between
+			font-size: 16px
+			line-height: 16px
+			&:not(:last-child)
+				margin-bottom: 16px
+			.question
+				padding: 0
+				outline: none !important
+				border: none !important
+				color: inherit
+			.title
+				color: rgba(255, 255, 255, 0.4)
+			.value
+				color: white
+				font-weight: 600
+	.nav-tabs
+		border: none
+		background: rgba(37, 36, 51, 0.8)
+		backdrop-filter: blur(16px)
+		border-radius: 16px
+		padding: 4px
+		margin-bottom: 16px
+		display: inline-flex
+		align-items: center
+		justify-content: flex-start
+		+lg
+			width: 100%
+	.nav-link
+		padding: 10px 70px
+		text-transform: uppercase
+		font-weight: 600
+		font-size: 16px
+		line-height: 20px
+		color: rgba(255, 255, 255, 0.2)
+		border-radius: 14px
+		border: none
+		+lg
+			width: 100%
+		&.active
+			color: white
+			background: rgba(255, 255, 255, 0.08)
+	.nav-item
+		border: none
+		+lg
+			width: 50%

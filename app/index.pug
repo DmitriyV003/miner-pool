@@ -9,10 +9,10 @@ block content
     .container.position-relative
       .tab-buttons
         .tab-prev
-          img(src='./images/icons/arrow.svg')
+          i.fas.fa-angle-left
         .tab-next
-          img(src='./images/icons/arrow.svg')
-      #pills-tabContent.tab-content
+          i.fas.fa-angle-right
+      #pills-tabContent.tab-content.js-tab-content
         #pills-home.tab-pane.fade.show
           .row
             .col-xl-6
@@ -76,6 +76,134 @@ block content
 
   section.coins
     .container
+      ul.nav.nav-tabs#coinTabs(role='tablist')
+        li.nav-item(role='presentation')
+          button.nav-link.active#solo-tab(data-bs-toggle='tab', data-bs-target='#solo', type='button', role='tab', aria-controls='solo', aria-selected='true') Solo
+        li.nav-item(role='presentation')
+          button.nav-link#joint-tab(data-bs-toggle='tab', data-bs-target='#joint', type='button', role='tab', aria-controls='joint', aria-selected='false') Joint
+      .tab-content#coinContent
+        .tab-pane.fade.show.active#solo(role='tabpanel', aria-labelledby='solo-tab')
+          .row
+            .col-xl-4.col-lg-6.col-md-6
+              .coin
+                .coin__header
+                  img.coin__img(src='./images/coin-1.svg')
+                  .coin__titles
+                    h3  Romb SOLO
+                    p
+                      span Pool hash:
+                      span.emp 24.44 GH/s
+                .coin__content
+                  .coin__line
+                    .title Last price:
+                    span.value $0.111
+                  .coin__line
+                    .title Last price:
+                    span.value $0.111
+                  .coin__line
+                    .title
+                      span Last price:
+                      button.btn.question(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
+                        i.far.fa-question-circle
+                    span.value $0.111
+                button.btn.coin__btn(type='button') Start mining
+
+
+            .col-xl-4.col-lg-6.col-md-6
+              .coin
+                .coin__header
+                  img.coin__img(src='./images/coin-1.svg')
+                  .coin__titles
+                    h3  Romb SOLO
+                    p
+                      span Pool hash:
+                      span.emp 24.44 GH/s
+                .coin__content
+                  .coin__line
+                    .title Last price:
+                    span.value $0.111
+                  .coin__line
+                    .title Last price:
+                    span.value $0.111
+                  .coin__line
+                    .title
+                      span Last price:
+                      button.btn.question(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
+                        i.far.fa-question-circle
+                    span.value $0.111
+                button.btn.coin__btn(type='button') Start mining
+
+
+            .col-xl-4.col-lg-6.col-md-6
+              .coin
+                .coin__header
+                  img.coin__img(src='./images/coin-1.svg')
+                  .coin__titles
+                    h3  Romb SOLO
+                    p
+                      span Pool hash:
+                      span.emp 24.44 GH/s
+                .coin__content
+                  .coin__line
+                    .title Last price:
+                    span.value $0.111
+                  .coin__line
+                    .title Last price:
+                    span.value $0.111
+                  .coin__line
+                    .title
+                      span Last price:
+                      button.btn.question(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
+                        i.far.fa-question-circle
+                    span.value $0.111
+                button.btn.coin__btn(type='button') Start mining
+            .col-xl-4.col-lg-6.col-md-6
+              .coin
+                .coin__header
+                  img.coin__img(src='./images/coin-1.svg')
+                  .coin__titles
+                    h3  Romb SOLO
+                    p
+                      span Pool hash:
+                      span.emp 24.44 GH/s
+                .coin__content
+                  .coin__line
+                    .title Last price:
+                    span.value $0.111
+                  .coin__line
+                    .title Last price:
+                    span.value $0.111
+                  .coin__line
+                    .title
+                      span Last price:
+                      button.btn.question(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
+                        i.far.fa-question-circle
+                    span.value $0.111
+                button.btn.coin__btn(type='button') Start mining
+            .col-xl-4.col-lg-6.col-md-6
+              .coin
+                .coin__header
+                  img.coin__img(src='./images/coin-1.svg')
+                  .coin__titles
+                    h3  Romb SOLO
+                    p
+                      span Pool hash:
+                      span.emp 24.44 GH/s
+                .coin__content
+                  .coin__line
+                    .title Last price:
+                    span.value $0.111
+                  .coin__line
+                    .title Last price:
+                    span.value $0.111
+                  .coin__line
+                    .title
+                      span Last price:
+                      button.btn.question(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
+                        i.far.fa-question-circle
+                    span.value $0.111
+                button.btn.coin__btn(type='button') Start mining
+        .tab-pane.fade#joint(role='tabpanel', aria-labelledby='joint-tab') 572785785785785
 block script
   script(src="js/index.js")
 

@@ -39,10 +39,10 @@
             <section class="banner-tabs">
                 <div class="container position-relative">
                     <div class="tab-buttons">
-                        <div class="tab-prev"><img src="./images/icons/arrow.svg"></div>
-                        <div class="tab-next"><img src="./images/icons/arrow.svg"></div>
+                        <div class="tab-prev"><i class="fas fa-angle-left"></i></div>
+                        <div class="tab-next"><i class="fas fa-angle-right"></i></div>
                     </div>
-                    <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-content js-tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show" id="pills-home">
                             <div class="row">
                                 <div class="col-xl-6">
@@ -113,7 +113,143 @@
                 </div>
             </section>
             <section class="coins">
-                <div class="container"></div>
+                <div class="container">
+                    <ul class="nav nav-tabs" id="coinTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="solo-tab" type="button" role="tab" data-bs-toggle="tab" data-bs-target="#solo" aria-controls="solo" aria-selected="true">Solo</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="joint-tab" type="button" role="tab" data-bs-toggle="tab" data-bs-target="#joint" aria-controls="joint" aria-selected="false">Joint</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="coinContent">
+                        <div class="tab-pane fade show active" id="solo" role="tabpanel" aria-labelledby="solo-tab">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-6 col-md-6">
+                                    <div class="coin">
+                                        <div class="coin__header"><img class="coin__img" src="./images/coin-1.svg">
+                                            <div class="coin__titles">
+                                                <h3> Romb SOLO</h3>
+                                                <p><span>Pool hash:</span><span class="emp">24.44 GH/s</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="coin__content">
+                                            <div class="coin__line">
+                                                <div class="title">Last price:</div><span class="value">$0.111</span>
+                                            </div>
+                                            <div class="coin__line">
+                                                <div class="title">Last price:</div><span class="value">$0.111</span>
+                                            </div>
+                                            <div class="coin__line">
+                                                <div class="title"><span>Last price:</span>
+                                                    <button class="btn question" type="button" title="Tooltip on top" data-bs-toggle="tooltip" data-bs-placement="top"><i class="far fa-question-circle"></i></button>
+                                                </div><span class="value">$0.111</span>
+                                            </div>
+                                        </div>
+                                        <button class="btn coin__btn" type="button">Start mining</button>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6">
+                                    <div class="coin">
+                                        <div class="coin__header"><img class="coin__img" src="./images/coin-1.svg">
+                                            <div class="coin__titles">
+                                                <h3> Romb SOLO</h3>
+                                                <p><span>Pool hash:</span><span class="emp">24.44 GH/s</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="coin__content">
+                                            <div class="coin__line">
+                                                <div class="title">Last price:</div><span class="value">$0.111</span>
+                                            </div>
+                                            <div class="coin__line">
+                                                <div class="title">Last price:</div><span class="value">$0.111</span>
+                                            </div>
+                                            <div class="coin__line">
+                                                <div class="title"><span>Last price:</span>
+                                                    <button class="btn question" type="button" title="Tooltip on top" data-bs-toggle="tooltip" data-bs-placement="top"><i class="far fa-question-circle"></i></button>
+                                                </div><span class="value">$0.111</span>
+                                            </div>
+                                        </div>
+                                        <button class="btn coin__btn" type="button">Start mining</button>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6">
+                                    <div class="coin">
+                                        <div class="coin__header"><img class="coin__img" src="./images/coin-1.svg">
+                                            <div class="coin__titles">
+                                                <h3> Romb SOLO</h3>
+                                                <p><span>Pool hash:</span><span class="emp">24.44 GH/s</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="coin__content">
+                                            <div class="coin__line">
+                                                <div class="title">Last price:</div><span class="value">$0.111</span>
+                                            </div>
+                                            <div class="coin__line">
+                                                <div class="title">Last price:</div><span class="value">$0.111</span>
+                                            </div>
+                                            <div class="coin__line">
+                                                <div class="title"><span>Last price:</span>
+                                                    <button class="btn question" type="button" title="Tooltip on top" data-bs-toggle="tooltip" data-bs-placement="top"><i class="far fa-question-circle"></i></button>
+                                                </div><span class="value">$0.111</span>
+                                            </div>
+                                        </div>
+                                        <button class="btn coin__btn" type="button">Start mining</button>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6">
+                                    <div class="coin">
+                                        <div class="coin__header"><img class="coin__img" src="./images/coin-1.svg">
+                                            <div class="coin__titles">
+                                                <h3> Romb SOLO</h3>
+                                                <p><span>Pool hash:</span><span class="emp">24.44 GH/s</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="coin__content">
+                                            <div class="coin__line">
+                                                <div class="title">Last price:</div><span class="value">$0.111</span>
+                                            </div>
+                                            <div class="coin__line">
+                                                <div class="title">Last price:</div><span class="value">$0.111</span>
+                                            </div>
+                                            <div class="coin__line">
+                                                <div class="title"><span>Last price:</span>
+                                                    <button class="btn question" type="button" title="Tooltip on top" data-bs-toggle="tooltip" data-bs-placement="top"><i class="far fa-question-circle"></i></button>
+                                                </div><span class="value">$0.111</span>
+                                            </div>
+                                        </div>
+                                        <button class="btn coin__btn" type="button">Start mining</button>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6">
+                                    <div class="coin">
+                                        <div class="coin__header"><img class="coin__img" src="./images/coin-1.svg">
+                                            <div class="coin__titles">
+                                                <h3> Romb SOLO</h3>
+                                                <p><span>Pool hash:</span><span class="emp">24.44 GH/s</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="coin__content">
+                                            <div class="coin__line">
+                                                <div class="title">Last price:</div><span class="value">$0.111</span>
+                                            </div>
+                                            <div class="coin__line">
+                                                <div class="title">Last price:</div><span class="value">$0.111</span>
+                                            </div>
+                                            <div class="coin__line">
+                                                <div class="title"><span>Last price:</span>
+                                                    <button class="btn question" type="button" title="Tooltip on top" data-bs-toggle="tooltip" data-bs-placement="top"><i class="far fa-question-circle"></i></button>
+                                                </div><span class="value">$0.111</span>
+                                            </div>
+                                        </div>
+                                        <button class="btn coin__btn" type="button">Start mining</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="joint" role="tabpanel" aria-labelledby="joint-tab">572785785785785</div>
+                    </div>
+                </div>
             </section>
         </main>
         <script src="./libs/js/vendor.min.js"></script>
