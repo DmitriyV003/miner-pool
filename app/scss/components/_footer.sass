@@ -1,0 +1,95 @@
+.footer
+  background: #242331
+  padding: 32px 19px
+  +md
+    padding: 18px 12px
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 15px
+    border-top: 0.5px solid rgba(255, 255, 255, 0.12)
+    margin-top: 24px
+    flex-wrap: wrap
+    +md
+      margin-top: 0
+  &__span
+    font-size: 14px
+    line-height: 20px
+    color: rgba(255, 255, 255, 0.5)
+    +md
+      font-size: 12px
+    a
+      color: white !important
+  &__list
+    display: flex
+    flex-direction: column
+    margin-left: auto
+    margin-right: auto
+    +lg
+      width: 33%
+    +md
+      margin: 0
+      padding-right: 25px
+    &:last-child
+      +md
+        padding-right: 0
+    &:not(:last-child)
+      +lg
+        margin-right: 24px
+      +md
+        margin-right: 0
+        margin-bottom: 16px
+    &:first-child
+      margin-left: 0
+      +md
+        width: 100%
+        margin-right: 0
+        margin-bottom: 16px
+        padding-bottom: 10px
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.12)
+        padding-right: 0
+        .footer__link
+          margin-bottom: 0
+    &_mobile
+      display: none
+      +md
+        display: block
+    &_ml
+      margin-left: 0
+      &:not(:last-child)
+        margin-right: 40px
+        +md
+          margin-right: 0
+      &:last-child
+        margin-right: 0
+  &__link
+    font-size: 14px
+    color: rgba(255, 255, 255, 0.5)
+    line-height: 20px
+    +md
+      font-size: 12px
+    &:hover
+      color: rgba(255, 255, 255, 0.8)
+    &:not(:last-child)
+      margin-bottom: 4px
+    &:first-child
+      margin-bottom: 12px
+      font-weight: 600
+      font-size: 12px
+      line-height: 16px
+      color: white
+      +md
+        margin-bottom: 4px
+    &:empty
+      margin-bottom: 28px
+      +md
+        margin-bottom: 20px
+  &__links
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
