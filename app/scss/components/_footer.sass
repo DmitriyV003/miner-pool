@@ -1,6 +1,7 @@
 .footer
   background: #242331
   padding: 32px 19px
+  margin-top: 112px
   +md
     padding: 18px 12px
   &__bottom
@@ -24,7 +25,6 @@
   &__list
     display: flex
     flex-direction: column
-    margin-left: auto
     margin-right: auto
     +lg
       width: 33%
@@ -35,8 +35,6 @@
       +md
         padding-right: 0
     &:not(:last-child)
-      +lg
-        margin-right: 24px
       +md
         margin-right: 0
         margin-bottom: 16px
@@ -61,7 +59,6 @@
     &_ml
       margin-left: 0
       &:not(:last-child)
-        margin-right: 40px
         +md
           margin-right: 0
       &:last-child

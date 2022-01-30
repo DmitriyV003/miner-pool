@@ -1,0 +1,91 @@
+.pool
+  &__stats
+    padding-top: 40px
+    .col-xl-4
+      &:not(:last-child)
+        +xl
+          margin-bottom: 12px
+  &__stat
+    background: rgba(37, 36, 51, 0.8)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09)
+    backdrop-filter: blur(46px)
+    border-radius: 28px
+    padding: 40px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+    +md
+      padding: 16px 24px
+    &-line
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      &:not(:last-child)
+        margin-bottom: 16px
+      span
+        font-size: 16px
+        line-height: 16px
+        color: rgba(255, 255, 255, 0.4)
+      .value
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+      .emp
+        font-weight: 600
+        color: white
+      .subvalue
+        margin-top: 4px
+        font-size: 14px
+        line-height: 16px
+    &-footer
+      margin-top: auto
+      padding-top: 32px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      .block
+        width: calc(50% - 8px)
+        background: rgba(181, 112, 249, 0.2)
+        border-radius: 20px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        padding: 16px
+        +md
+          width: calc(50% - 4px)
+        span
+          font-size: 12px
+          line-height: 16px
+          color: rgba(255, 255, 255, 0.4)
+          &:not(:last-child)
+            margin-bottom: 4px
+        .emp
+          font-weight: 600
+          font-size: 20px
+          line-height: 24px
+          color: white
+    &-header
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 40px
+      .diff
+        background: rgba(181, 112, 249, 0.2)
+        border-radius: 8px
+        padding: 8px 16px
+        span
+          color: rgba(255, 255, 255, 0.6)
+          font-weight: 500
+          font-size: 12px
+          line-height: 16px
+          &:not(:last-child)
+            margin-right: 8px
+        .emp
+          font-weight: bold
+          color: white
+      h3
+        font-weight: 600
+        font-size: 20px
+        line-height: 32px
+        color: white

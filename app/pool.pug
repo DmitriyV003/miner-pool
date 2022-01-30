@@ -1,0 +1,117 @@
+extends pug/layout/layout-index
+
+block vars
+    -const pageTitle = 'Pool page'
+    -const pageClass = 'pool'
+
+block content
+    .pool-header
+        .container
+            .pool-header__top
+                .pool-header__logo
+                    img
+                    h1 Ravencoin
+                .pool-header__select
+                    select.form-select(aria-label='Default select example')
+                        option(selected='') Open this select menu
+                        option(value='1') One
+                        option(value='2') Two
+                        option(value='3') Three
+                a.btn.btn-primary
+                    i.fab.fa-telegram-plane.icon.pool-header__btn
+                    span Connect
+            .pool-header__controls
+                .pool-header__btns.js-pool-header-btns
+                    div.btn-wrapper
+                        button.btn.btn-dark.active
+                            span Website
+                    div.btn-wrapper
+                        button.btn.btn-dark
+                            span Website
+                    div.btn-wrapper
+                        button.btn.btn-dark
+                            span Website
+                    div.btn-wrapper
+                        button.btn.btn-dark
+                            span Website
+                    div.btn-wrapper
+                        button.btn.btn-dark
+                            span Website
+                    div.btn-wrapper
+                        button.btn.btn-dark
+                            span Website
+                .input-group.pool-header__search
+                    span.input-group-text.miner-input-text @
+                    input.form-control.miner-input(type='text', placeholder='Username', aria-label='Username', aria-describedby='basic-addon1')
+
+    .pool__graph
+        .container
+
+    .pool__stats
+        .container
+            .row
+                .col-xl-4.col-lg-6
+                    .pool__stat
+                        .pool__stat-header
+                            h3 Network Stats
+                            .diff
+                                span Diff now:
+                                span.emp 14753
+                        .pool__stat-content
+                            .pool__stat-line
+                                span Speed (Now)
+                                .value
+                                    span.emp 7.13 TH/s
+                                    span.subvalue ₿ 629.213
+                            .pool__stat-line
+                                span Speed (Now)
+                                .value
+                                    span.emp 7.13 TH/s
+                            .pool__stat-line
+                                span Speed (Now)
+                                .value
+                                    span.emp 7.13 TH/s
+                            .pool__stat-line
+                                span Speed (Now)
+                                .value
+                                    span.emp 7.13 TH/s
+                            .pool__stat-line
+                                span Speed (Now)
+                                .value
+                                    span.emp 7.13 TH/s
+                                    span.subvalue ₿ 629.213
+                        .pool__stat-footer
+                            .block
+                                span Block reward
+                                span.emp 75FLUX
+                            .block
+                                span Block reward
+                                span.emp 75FLUX
+                .col-xl-4.col-lg-6
+                    .pool__stat
+                        .pool__stat-header
+                            h3 Network Stats
+                            .diff
+                                span Diff now:
+                                span.emp 14753
+                        .pool__stat-content
+                            .pool__stat-line
+                                span Speed (Now)
+                                .value
+                                    span.emp 7.13 TH/s
+                                    span.subvalue ₿ 629.213
+                            .pool__stat-line
+                                span Speed (Now)
+                                .value
+                                    span.emp 7.13 TH/s
+                        .pool__stat-footer
+                            .block
+                                span Block reward
+                                span.emp 75FLUX
+                            .block
+                                span Block reward
+                                span.emp 75FLUX
+
+
+block script
+    script(src="js/pool.js")
