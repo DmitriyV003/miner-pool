@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet">
+        <link href="libs/css/vendor.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Dashboard page</title>
+        <meta name="cmsmagazine" content="047aba4b7470a7fde82d8db44a6d7c62">
+        <!--script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js", integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p", crossorigin="anonymous")-->
+        <!--script(src="libs/js/vendor.min.js")-->
+    </head>
+    <body class="page-dashboard-page">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-0 pb-0">
+            <div class="container d-flex align-items-center"><a class="navbar-brand" href="#"><img src="./images/logo-dark.svg" width="132" height="20"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link pt-0 active" href="#" aria-current="page">Calculators</a></li>
+                        <li class="nav-item"><a class="nav-link pt-0" href="#">Select coin</a></li>
+                        <li class="nav-item"><a class="nav-link pt-0" href="#">Support</a></li>
+                        <li class="nav-item"><a class="nav-link pt-0" href="#">FAQ</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex nav-socials"><a class="nav-social"><img src="./images/socials/google.svg"></a><a class="nav-social"><img src="./images/socials/telegramm.svg"></a></div>
+                        <div class="form-check form-switch mb-0">
+                            <label class="form-check-label text-white fs-6" for="flexSwitchCheckDefault">Night mode</label>
+                            <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox" role="switch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="main main-dashboard-page">
+            <section class="dashboard-page-header">
+                <div class="container dashboard-page-header__content">
+                    <div class="title">
+                        <h1>Miners's dashboard</h1><span>t1Y7szEZYsKk1S3B7AS54cBaej5kkvhtajh</span>
+                    </div>
+                </div>
+            </section>
+            <section class="dashboard-page-stat">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="dashboard-page-stat__item">
+                                <div class="dashboard-page-stat__text"><span>Average luck</span><span class="emp">99.32%</span></div>
+                                <button class="btn" type="button" title="Tooltip on top" data-bs-toggle="tooltip" data-bs-placement="top"><i class="far fa-question-circle"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="dashboard-page-stat__item">
+                                <div class="dashboard-page-stat__text"><span>Average luck</span><span class="emp">99.32%</span></div>
+                                <button class="btn" type="button" title="Tooltip on top" data-bs-toggle="tooltip" data-bs-placement="top"><i class="far fa-question-circle"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="dashboard-page-stat__item">
+                                <div class="dashboard-page-stat__text"><span>Average luck</span><span class="emp">99.32%</span></div>
+                                <button class="btn" type="button" title="Tooltip on top" data-bs-toggle="tooltip" data-bs-placement="top"><i class="far fa-question-circle"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="dashboard-page-stat__item">
+                                <div class="dashboard-page-stat__text"><span>Average luck</span><span class="emp">99.32%</span></div>
+                                <button class="btn" type="button" title="Tooltip on top" data-bs-toggle="tooltip" data-bs-placement="top"><i class="far fa-question-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="dashboard-page-table coins">
+                <div class="container">
+                    <ul class="nav nav-tabs" id="coinTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="solo-tab" type="button" role="tab" data-bs-toggle="tab" data-bs-target="#solo" aria-controls="solo" aria-selected="true">Solo</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="joint-tab" type="button" role="tab" data-bs-toggle="tab" data-bs-target="#joint" aria-controls="joint" aria-selected="false">Joint</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="coinContent">
+                        <div class="tab-pane fade show active" id="solo" role="tabpanel" aria-labelledby="solo-tab">
+                            <div class="dashboard-page-table__content">
+                                <table class="dashboard-page-table__table">
+                                    <thead class="dashboard-page-table__titles">
+                                        <tr>
+                                            <th>Worker</th>
+                                            <th>Hashrate</th>
+                                            <th>Difficulty</th>
+                                            <th>Shares</th>
+                                            <th>Invalid</th>
+                                            <th>Paid</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="tu">RIGA01</td>
+                                            <td>687.39 Sol/s</td>
+                                            <td>21187</td>
+                                            <td class="tu">20.51 (100%)</td>
+                                            <td>0.00 (0%)</td>
+                                            <td>63.3829311</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="dashboard-page-table__table-mobile">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="line"><span>Mined At (UTC)</span><span class="emp">2021-12-02 19:56:27</span></div>
+                                                    <div class="line"><span>Mined At (UTC)</span><span class="emp">2021-12-02 19:56:27</span></div>
+                                                    <div class="line"><span>Mined At (UTC)</span><span class="emp">2021-12-02 19:56:27</span></div>
+                                                    <div class="line"><span>Confirmations</span>
+                                                        <div class="miner-progress">25<span style="width:25%"></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Accordion Item #2
+
+                                                </button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the<code>.accordion-body</code>, though the transition does limit overflow.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Accordion Item #3
+
+                                                </button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the<code>.accordion-body</code>, though the transition does limit overflow.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="joint" role="tabpanel" aria-labelledby="joint-tab">572785785785785</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__links">
+                        <div class="footer__list"><a class="footer__link" href="/"><img src="./images/logo-dark.svg"></a>
+                            <div class="footer__link"><a><img src="./images/socials/telegramm.svg"></a><a><img src="./images/socials/google.svg"></a></div>
+                        </div>
+                        <div class="footer__list">
+                            <div class="footer__link" href="/">INFO</div><a class="footer__link">About</a><a class="footer__link">F.A.Q.</a><a class="footer__link">Terms of Service</a>
+                        </div>
+                        <div class="footer__list">
+                            <div class="footer__link" href="/">INFO</div><a class="footer__link">About</a><a class="footer__link">F.A.Q.</a><a class="footer__link">Terms of Service</a>
+                        </div>
+                        <div class="footer__list footer__list_mobile"></div>
+                        <div class="footer__list footer__list_ml">
+                            <div class="footer__link" href="/">INFO</div><a class="footer__link">About</a><a class="footer__link">F.A.Q.</a><a class="footer__link">Terms of Service</a>
+                        </div>
+                        <div class="footer__list footer__list_ml">
+                            <div class="footer__link"></div><a class="footer__link">About</a><a class="footer__link">F.A.Q.</a><a class="footer__link">Terms of Service</a>
+                        </div>
+                        <div class="footer__list footer__list_ml">
+                            <div class="footer__link"></div><a class="footer__link">F.A.Q.</a><a class="footer__link">Terms of Service</a>
+                        </div>
+                    </div>
+                    <div class="footer__bottom"><span class="footer__span">© MinerPool 2018-2021</span><span class="footer__span">All rights reserved</span><span class="footer__span">made by<a>roobinium.io</a></span></div>
+                </div>
+            </div>
+        </footer>
+        <script src="./libs/js/vendor.min.js"></script>
+    </body>
+    <script src="js/block.js"></script>
+</html>

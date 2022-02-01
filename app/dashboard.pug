@@ -1,0 +1,127 @@
+extends pug/layout/layout-index
+
+block vars
+    -const pageTitle = 'Dashboard page'
+    -const pageClass = 'dashboard-page'
+
+block content
+    section.dashboard-page-header
+        .container.dashboard-page-header__content
+            .title
+                h1 Miners's dashboard
+                span t1Y7szEZYsKk1S3B7AS54cBaej5kkvhtajh
+
+    section.dashboard-page-stat
+        .container
+            .row
+                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+                    .dashboard-page-stat__item
+                        .dashboard-page-stat__text
+                            span Average luck
+                            span.emp 99.32%
+                        button.btn(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
+                            i.far.fa-question-circle
+
+                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+                    .dashboard-page-stat__item
+                        .dashboard-page-stat__text
+                            span Average luck
+                            span.emp 99.32%
+                        button.btn(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
+                            i.far.fa-question-circle
+
+                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+                    .dashboard-page-stat__item
+                        .dashboard-page-stat__text
+                            span Average luck
+                            span.emp 99.32%
+                        button.btn(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
+                            i.far.fa-question-circle
+
+                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
+                    .dashboard-page-stat__item
+                        .dashboard-page-stat__text
+                            span Average luck
+                            span.emp 99.32%
+                        button.btn(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
+                            i.far.fa-question-circle
+
+    section.dashboard-page-table.coins
+        .container
+            ul.nav.nav-tabs#coinTabs(role='tablist')
+                li.nav-item(role='presentation')
+                    button.nav-link.active#solo-tab(data-bs-toggle='tab', data-bs-target='#solo', type='button', role='tab', aria-controls='solo', aria-selected='true') Solo
+                li.nav-item(role='presentation')
+                    button.nav-link#joint-tab(data-bs-toggle='tab', data-bs-target='#joint', type='button', role='tab', aria-controls='joint', aria-selected='false') Joint
+            .tab-content#coinContent
+                .tab-pane.fade.show.active#solo(role='tabpanel', aria-labelledby='solo-tab')
+                    .dashboard-page-table__content
+                        table.dashboard-page-table__table
+                            thead.dashboard-page-table__titles
+                                tr
+                                    th Worker
+                                    th Hashrate
+                                    th Difficulty
+                                    th Shares
+                                    th Invalid
+                                    th Paid
+                            tbody
+                                tr
+                                    td.tu RIGA01
+                                    td 687.39 Sol/s
+                                    td 21187
+                                    td.tu 20.51 (100%)
+                                    td 0.00 (0%)
+                                    td 63.3829311
+                        .dashboard-page-table__table-mobile
+                            .accordion#accordionExample
+                                .accordion-item
+                                    h2.accordion-header#headingOne
+                                        button.accordion-button(type='button', data-bs-toggle='collapse', data-bs-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne').
+                                            Accordion Item #1
+                                    #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne', data-bs-parent='#accordionExample')
+                                        .accordion-body
+                                            .line
+                                                span Mined At (UTC)
+                                                span.emp 2021-12-02 19:56:27
+                                            .line
+                                                span Mined At (UTC)
+                                                span.emp 2021-12-02 19:56:27
+                                            .line
+                                                span Mined At (UTC)
+                                                span.emp 2021-12-02 19:56:27
+                                            .line
+                                                span Confirmations
+                                                .miner-progress 25
+                                                    span(style='width:25%')
+
+                                .accordion-item
+                                    h2.accordion-header#headingTwo
+                                        button.accordion-button.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo').
+
+                                            Accordion Item #2
+
+                                    #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo', data-bs-parent='#accordionExample')
+                                        .accordion-body
+                                            strong This is the second item's accordion body.
+                                            |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                                            code .accordion-body
+                                            | , though the transition does limit overflow.
+
+                                .accordion-item
+                                    h2.accordion-header#headingThree
+                                        button.accordion-button.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree').
+
+                                            Accordion Item #3
+
+                                    #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree', data-bs-parent='#accordionExample')
+                                        .accordion-body
+                                            strong This is the third item's accordion body.
+                                            |  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                                            code .accordion-body
+                                            | , though the transition does limit overflow.
+
+                .tab-pane.fade#joint(role='tabpanel', aria-labelledby='joint-tab') 572785785785785
+
+block script
+    script(src="js/block.js")
