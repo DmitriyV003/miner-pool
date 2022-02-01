@@ -37,6 +37,7 @@
     "posthtml-attrs-sorter": "^1.1.0",
     "pug": "^2.0.4",
     "sass": "^1.49.0",
+    "swiper": "^7.4.1",
     "useref": "^1.4.3"
   },
   "devDependencies": {

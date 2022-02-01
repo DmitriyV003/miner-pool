@@ -96,6 +96,7 @@ gulp.task('concatJs', function () {
             src + '/libs/js/slick.min.js',
             './node_modules/bootstrap/dist/js/bootstrap.bundle.js',
             './node_modules/@fortawesome/fontawesome-free/js/all.js',
+            './node_modules/swiper/swiper-bundle.js',
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('vendor.js'))
