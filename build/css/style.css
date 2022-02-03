@@ -7385,6 +7385,16 @@ body {
   background: #11141B;
 }
 
+h1,
+.h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 40px;
+  color: white;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
 a {
   text-decoration: none !important;
   cursor: pointer;
@@ -8914,6 +8924,190 @@ div:active {
 .dashboard-stats__line span.emp {
   font-weight: 600;
   color: white;
+}
+
+.payments__content {
+  background: rgba(37, 36, 51, 0.8);
+  border-radius: 32px;
+}
+
+.payments__header {
+  padding: 40px 0 32px;
+}
+
+.payments__table {
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 32px;
+  grid-template-columns: minmax(400px, 1.7fr) minmax(80px, 1.2fr) minmax(50px, 1fr) minmax(50px, 1.5fr) minmax(50px, 1.3fr);
+}
+
+.payments__table th,
+.payments__table td {
+  word-break: break-all;
+}
+
+.payments__table thead,
+.payments__table tbody,
+.payments__table tr {
+  display: contents;
+}
+
+.payments__table th {
+  background: rgba(255, 255, 255, 0.04);
+  font-weight: 600;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 32px 0 20px 20px;
+  margin-bottom: 12px;
+}
+
+.payments__table td {
+  padding: 8px 0 8px 20px;
+  margin-bottom: 4px;
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.payments__table td.tu {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.payments__table td.blue {
+  color: #35b6ff !important;
+  text-decoration: underline !important;
+}
+
+.payments__table button {
+  padding: 10px 38px;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.payments__table .miner-progress {
+  width: 120px;
+  padding: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 600;
+  color: white;
+  font-size: 12px;
+  line-height: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.payments__table .miner-progress span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: -o-linear-gradient(318.36deg, #35B6FF 24.79%, #1B84D7 73.53%);
+  background: linear-gradient(131.64deg, #35B6FF 24.79%, #1B84D7 73.53%);
+}
+
+.payments__table__content {
+  background: rgba(37, 36, 51, 0.8);
+  border-radius: 32px;
+}
+
+.payments__table-mobile {
+  padding: 12px 16px;
+  display: none;
+}
+
+.payments__table-mobile .accordion-body {
+  padding: 0 0 12px;
+  margin-top: 4px;
+}
+
+.payments__table-mobile .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.payments__table-mobile .line:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.payments__table-mobile .line .miner-progress {
+  width: 80%;
+}
+
+.payments__table-mobile .line span {
+  width: 50%;
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.payments__table-mobile .line span.emp {
+  font-weight: 600;
+  text-align: right;
+}
+
+.payments__table-mobile .accordion {
+  background: transparent;
+}
+
+.payments__table-mobile .accordion-button {
+  padding: 12px 0;
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.payments__table-mobile .accordion-button a {
+  font-weight: 600;
+  color: #35b6ff;
+  text-decoration: underline !important;
+  word-break: break-all;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.payments__table-mobile .accordion-item {
+  outline: none !important;
+  border: none !important;
+  background: transparent;
+}
+
+.payments__table-mobile .accordion-item:not(:last-child) {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.12) !important;
 }
 
 @media (min-width: 576px) {
@@ -14830,6 +15024,18 @@ div:active {
   .dashboard-stats__main {
     margin-bottom: 16px;
     padding-bottom: 10px;
+  }
+
+  .payments__header {
+    padding: 40px 0 16px;
+  }
+
+  .payments__table {
+    display: none;
+  }
+
+  .payments__table-mobile {
+    display: block;
   }
 }
 

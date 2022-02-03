@@ -1,0 +1,71 @@
+extends pug/layout/layout-index
+
+block vars
+    -const pageTitle = 'Payments page'
+    -const pageClass = 'payments-page'
+
+block content
+    section.payments
+        .container
+            .payments__header
+                h1 payments
+
+    section.payments__page-content
+        .container
+            .payments__content
+                table.payments__table
+                    thead.payments__titles
+                        tr
+                            th Blocks
+                            th Payment date
+                            th Miners
+                            th Shares
+                            th Amount
+                    tbody
+                        tr
+                            td.blue
+                                a 1004196,1004198,1004199,1004201,1004202,1004204,1004206,1004207
+                            td 2021-12-02 20:55:13
+                            td 31
+                            td 1128
+                            td 241.90737178 FLUX
+                .payments__table-mobile
+                    .accordion#accordionExample
+                        .accordion-item
+                            h2.accordion-header#headingOne
+                                button.accordion-button(type='button', data-bs-toggle='collapse', data-bs-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                                    a Accordion Item #1
+                            #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne', data-bs-parent='#accordionExample')
+                                .accordion-body
+                                    .line
+                                        span Mined At (UTC)
+                                        span.emp 2021-12-02 19:56:27
+                                    .line
+                                        span Mined At (UTC)
+                                        span.emp 2021-12-02 19:56:27
+                                    .line
+                                        span Mined At (UTC)
+                                        span.emp 2021-12-02 19:56:27
+                                    .line
+                                        span Confirmations
+                                        .miner-progress 25
+                                            span(style='width:25%')
+                        .accordion-item
+                            h2.accordion-header#headingTwo
+                                button.accordion-button(type='button', data-bs-toggle='collapse', data-bs-target='#collapseTwo', aria-expanded='true', aria-controls='collapseOne').
+                                    Accordion Item #1
+                            #collapseTwo.accordion-collapse.collapse.show(aria-labelledby='headingTwo', data-bs-parent='#accordionExample')
+                                .accordion-body
+                                    .line
+                                        span Mined At (UTC)
+                                        span.emp 2021-12-02 19:56:27
+                                    .line
+                                        span Mined At (UTC)
+                                        span.emp 2021-12-02 19:56:27
+                                    .line
+                                        span Mined At (UTC)
+                                        span.emp 2021-12-02 19:56:27
+                                    .line
+                                        span Confirmations
+                                        .miner-progress 25
+                                            span(style='width:25%')
