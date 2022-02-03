@@ -1,0 +1,61 @@
+.dashboard-page-stats
+	padding-bottom: 24px
+	.col-xl-4
+		&:not(:last-child)
+			margin-bottom: 12px
+.dashboard-stats
+	background: rgba(37, 36, 51, 0.8)
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09)
+	backdrop-filter: blur(46px)
+	border-radius: 28px
+	padding: 40px
+	+xl
+		padding: 24px 16px
+	a
+		font-weight: 600
+		color: rgba(53, 182, 255, 1) !important
+		text-decoration: underline !important
+		font-size: 14px
+		line-height: 24px
+		margin-left: 8px
+	&__main
+		margin-bottom: 24px
+		padding-bottom: 16px
+		border-bottom: 0.5px solid rgba(255, 255, 255, 0.12)
+		display: flex
+		align-items: center
+		justify-content: space-between
+		+lg
+			margin-bottom: 16px
+			padding-bottom: 10px
+		.title
+			white-space: nowrap
+			text-overflow: ellipsis
+			color: white
+			font-size: 20px
+			line-height: 32px
+			font-weight: 600
+			max-width: 45%
+			overflow: hidden
+		.square
+			margin: 0 5px 0 8px
+			padding: 8px 16px
+			background: rgba(181, 112, 249, 0.2)
+			border-radius: 8px
+			font-size: 12px
+			color: white !important
+			line-height: 16px
+			font-weight: 600 !important
+	&__line
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&:not(:last-child)
+			margin-bottom: 16px
+		span
+			font-size: 16px
+			color: rgba(255, 255, 255, 0.4)
+			line-height: 16px
+			&.emp
+				font-weight: 600
+				color: white

@@ -11,40 +11,57 @@ block content
                 h1 Miners's dashboard
                 span t1Y7szEZYsKk1S3B7AS54cBaej5kkvhtajh
 
-    section.dashboard-page-stat
+    section.dashboard-page-stats
         .container
             .row
-                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
-                    .dashboard-page-stat__item
-                        .dashboard-page-stat__text
-                            span Average luck
-                            span.emp 99.32%
-                        button.btn(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
-                            i.far.fa-question-circle
-
-                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
-                    .dashboard-page-stat__item
-                        .dashboard-page-stat__text
-                            span Average luck
-                            span.emp 99.32%
-                        button.btn(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
-                            i.far.fa-question-circle
-
-                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
-                    .dashboard-page-stat__item
-                        .dashboard-page-stat__text
-                            span Average luck
-                            span.emp 99.32%
-                        button.btn(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
-                            i.far.fa-question-circle
-
-                .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-6
-                    .dashboard-page-stat__item
-                        .dashboard-page-stat__text
-                            span Average luck
-                            span.emp 99.32%
-                        button.btn(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
-                            i.far.fa-question-circle
+                .col-xl-4.col-lg-4
+                    .dashboard-stats
+                        .dashboard-stats__main
+                            span.title Hashrate stats
+                            span.square 67
+                            a Change
+                        .dashboard-stats__lines
+                            .dashboard-stats__line
+                                span Workers
+                                span.emp 14
+                            .dashboard-stats__line
+                                span Workers
+                                span.emp 14
+                            .dashboard-stats__line
+                                span Workers
+                                span.emp 14
+                .col-xl-4.col-lg-4
+                    .dashboard-stats
+                        .dashboard-stats__main
+                            span.title Hashrate stats
+                            span.square 67
+                            a Change
+                        .dashboard-stats__lines
+                            .dashboard-stats__line
+                                span Workers
+                                span.emp 14
+                            .dashboard-stats__line
+                                span Workers
+                                span.emp 14
+                            .dashboard-stats__line
+                                span Workers
+                                span.emp 14
+                .col-xl-4.col-lg-4
+                    .dashboard-stats
+                        .dashboard-stats__main
+                            span.title Hashrate stats
+                            span.square 67
+                            a Change
+                        .dashboard-stats__lines
+                            .dashboard-stats__line
+                                span Workers
+                                span.emp 14
+                            .dashboard-stats__line
+                                span Workers
+                                span.emp 14
+                            .dashboard-stats__line
+                                span Workers
+                                span.emp 14
 
     section.dashboard-page-table.coins
         .container
@@ -94,6 +111,7 @@ block content
                                                 span Confirmations
                                                 .miner-progress 25
                                                     span(style='width:25%')
+                                            button.btn.btn-primary.accordion-btn More
 
                                 .accordion-item
                                     h2.accordion-header#headingTwo
